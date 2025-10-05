@@ -7,6 +7,8 @@
   </head>
   <body>
     <header>
+      <h1>Welcome to my Webpage Assignment</h1>
+      <hr />
       <nav>
         <h1>Personal Information Section</h1>
       </nav>
@@ -16,24 +18,11 @@
         <h4>Name: ASADU FAVOUR</h4>
       </section>
       <section>
-        <h4>Hobby: Playing games</h4>
+        <h4>Hobby: Playing games and Watching anime</h4>
       </section>
       <section>
         <h4>Favorite Music: Streets by doja cat</h4>
       </section>
-      <hr />
-      <figure>
-        <video src="./video/naru.mp4" width="550" controls></video>
-        <figcaption style="font-style: italic;">joke gone wrong</figcaption>
-      </figure>
-      <a href="#n-sec">move to next section</a>
-      <h2 id="n-sec">Next Section</h2>
-      <br />
-      <hr />
-      <figure>
-        <audio src="./audio/music.m4a" width="300" controls></audio>
-      </figure>
-
       <article>
         <h2><u>Reason why i'm in the Web Development field</u></h2>
         <p>
@@ -43,43 +32,58 @@
           so i can be unique, like you all, with both knowledge and technology.
         </p>
       </article>
-
       <aside>ps:i'm a beginner, please go easy on me.</aside>
-
+      <h2>My Favorite Anime Character</h2>
       <figure>
         <img
           src="./image/luffy.jpg"
           alt="Mugiwara Luffy"
-          width="500"
-          height="300"
+          width="400"
+          height="200"
         />
-        <figcaption>The king of pirates;One piece</figcaption>
+        <figcaption>Straw hat Luffy The king of pirates;One piece</figcaption>
       </figure>
-
       <details>
-        <summary>Read more</summary>
+        <summary>Tip</summary>
         <p>
-          i'm a big anime and manga fan, they sort of console and make me happy.
+          i'm a big anime and manga fan, and one piece is one of the best anime
+          ive ever watched.<br />
+          if you want to start watching anime, start with demon slayer.
         </p>
       </details>
+      <h2>My Favorite audio</h2>
+      <figure>
+        <audio src="./audio/music.m4a" width="300" controls></audio>
+      </figure>
+      <hr />
+      <!--lets make a container-->
+      <h2>Map of PortHarcourt</h2>
+      <div class="map-container">
+        <iframe
+          width="800"
+          height="300"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15903.155999754894!2d6.9531234!3d4.806254099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1759621728054!5m2!1sen!2sng"
+          title="google map"
+        >
+        </iframe>
+      </div>
+      <h2>A Comedy Skit</h2>
+      <figure>
+        <video src="./video/naru.mp4" width="550" controls></video>
+        <figcaption style="font-style: italic">joke gone wrong</figcaption>
+      </figure>
     </main>
-    <!--lets make a container-->
-    <div class="map-container">
-      <iframe
-        width="800"
-        height="300"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15903.155999754894!2d6.9531234!3d4.806254099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1759621728054!5m2!1sen!2sng"
-        title="google map"
-      >
-      </iframe>
-    </div>
+    <p><a href="#n-sec">move to next section</a></p>
+    <h2 id="n-sec">Next Section</h2>
 
-    <hr />
     <h1>Contact Form Section</h1>
+    <hr />
     <form style="width: 600px; border: 1px solid #ccc; padding: 10px">
       <p>
+        <label for="name">Name:</label>
         <input
           type="text"
+          id="full name"
           name="Full name"
           placeholder="Full name"
           required
@@ -87,42 +91,52 @@
       </p>
 
       <p>
-        <input type="Email" name="Email" placeholder="Email" required /><br />
+        <label for="email">Email:</label>
+        <input
+          type="Email"
+          id="email"
+          name="Email"
+          placeholder="Email"
+          required
+        /><br />
       </p>
 
       <p>
+        <label for="phone number">Tel:</label>
         <input
           type="tel"
-          name="Phone number"
+          id="phone number"
+          name="phone number"
           placeholder="Phone number"
         /><br />
       </p>
 
-      <h3>Gender</h3>
-      <label> <input type="radio" name="gender" value="male" />male </label>
+      <h4>Gender:</h4>
+      <label> <input type="radio" name="gender" value="male" />Male </label
+      ><br />
 
-      <label> <input type="radio" name="gender" value="female" />female </label>
+      <label> <input type="radio" name="gender" value="female" />Female </label
+      ><br />
 
-      <label> <input type="radio" name="gender" value="N/A" />N/A </label><br />
+      <label> <input type="radio" name="gender" value="N/A" />N/A </label>
 
-      <p>
-        <select name="country">
-          <option value="us">United States</option>
-          <option value="uk">United Kingdom</option>
-          <option value="nigeria">Nigeria</option>
-          <option value="congo">Congo</option>
-        </select>
-      </p>
+      <h4>Country:</h4>
+      <select name="country">
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="congo">Congo</option>
+      </select>
 
-      <p>
-        <textarea
-          name="feedback"
-          placeholder="write your feedback"
-          rows="8"
-          cols="50"
-        ></textarea
-        ><br />
-      </p>
+      <h4>Feedback:</h4>
+      <textarea
+        name="feedback"
+        placeholder="write your feedback"
+        rows="8"
+        cols="50"
+      ></textarea
+      ><br />
+
       <button type="submit">register</button>
     </form>
     <footer>
